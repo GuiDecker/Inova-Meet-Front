@@ -24,7 +24,7 @@ export const Header = () => {
         <Input
           type="text"
           placeholder="São Paulo, Br"
-          className="px-3 py-2  rounded-none bg-white text-white placeholder-gray-500 focus:outline-none"
+          className="px-3 py-2  rounded-none bg-white text-black placeholder-gray-500 focus:outline-none"
         />
 
         <Button className="px-4 py-2  bg-primaryGreen hover:bg-green-400 text-white rounded-none rounded-r-md">
