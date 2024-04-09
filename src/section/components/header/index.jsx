@@ -16,21 +16,17 @@ export const Header = () => {
       </div>
       {/* Search Inputs and Buttons */}
       <div className="flex items-center max-w-[447px]">
-        {/* Search Input 1 */}
         <Input
           type="text"
           placeholder="Pesquisar eventos"
           className="px-3 py-2 rounded-l-md rounded-r-none bg-white text-black placeholder-black focus:outline-none"
         />
-
-        {/* Search Input 2 */}
         <Input
           type="text"
           placeholder="São Paulo, Br"
           className="px-3 py-2  rounded-none bg-white text-white placeholder-gray-500 focus:outline-none"
         />
 
-        {/* Search Button */}
         <Button className="px-4 py-2  bg-primaryGreen hover:bg-green-400 text-white rounded-none rounded-r-md">
           <SearchIcon />
         </Button>
