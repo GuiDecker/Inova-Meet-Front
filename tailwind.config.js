@@ -17,6 +17,7 @@ module.exports = {
         primaryBlue: "#002757",
         primaryGreen: "#00F888",
         primaryGray: "#F4EFEF",
+        secondaryGray: "#F9F4F4",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
