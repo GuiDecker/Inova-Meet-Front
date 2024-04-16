@@ -5,7 +5,7 @@ import React from "react";
 export const IntroSection = () => {
   return (
     // add flex-wrap
-    <section className="p-12 flex justify-center ">
+    <section className="p-12 flex flex-wrap justify-center ">
       <div className="flex flex-col  gap-12 mt-28">
         <Label className="text-white text-4xl mx-auto max-w-[561px]">
           Uma plataforma onde

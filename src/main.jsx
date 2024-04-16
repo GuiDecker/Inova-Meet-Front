@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./routes/ErrorPage.jsx";
 import Home from "./routes/Home.jsx";
 import Meet from "./routes/Meet.jsx";
+import Login from "./routes/Login.jsx";
+import UserProfile from "./routes/User-profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/user-profile",
+        element: <UserProfile />,
       },
       {
         path: "/meet",
