@@ -8,7 +8,7 @@ export const SignUpPage = () => {
     <div className="flex flex-col md:flex-row">
       {/* Box1 - 30% width */}
       <div className="flex flex-col pt-[5%] items-center bg-primaryBlue h-[50vh] md:h-[100vh] w-[100%] max-w-[100%] md:w-[30%] md:max-w-[30%]">
-        <img src="././public/logo-inovameet.png" alt="Logo" width={200} height={170} />
+        <img src="/logo-inovameet.png" alt="Logo" width={200} height={170} />
         <h2 className="text-2xl text-white font-bold -mt-4 mb-[20%] md:mb-[40%]">
           Inova<span className="text-green-500">Meet</span>
         </h2>

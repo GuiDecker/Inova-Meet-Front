@@ -49,7 +49,7 @@ export const LandingHome = () => {
               </Button>
             </Link>
           </div>
-          <img src="././public/people-group.png" alt="Logo" width={789} height={613} />
+          <img src="/people-group.png" alt="Logo" width={789} height={613} />
         </section>
 
         {/* INTRO SECTION */}
@@ -68,7 +68,7 @@ export const LandingHome = () => {
               >
                 <Label className="text-base">{interest.label}</Label>
                 {interest.icon}
-                <img src={`././public/${interest.image_name}.png`} alt={interest.label} />
+                <img src={`/${interest.image_name}.png`} alt={interest.label} />
               </div>
             ))}
           </div>
@@ -86,7 +86,7 @@ export const LandingHome = () => {
             {places.map((place, index) => (
               <div key={index} className="flex flex-col items-center justify-center w-48 m-4">
                 <div className="w-32 h-32 bg-white rounded-full overflow-hidden">
-                  <img src={`././public/${place.src}.png`} alt={place.label} className="w-full h-full object-cover" />
+                  <img src={`/${place.src}.png`} alt={place.label} className="w-full h-full object-cover" />
                 </div>
                 <Label className="text-white text-xl mt-2">{place.label}</Label>
               </div>
@@ -94,7 +94,7 @@ export const LandingHome = () => {
           </div>
 
           <img
-            src={`././public/Group1.png`}
+            src={`/Group1.png`}
             alt="girl"
             className="w-full max-w-6xl object-cover -mb-14 md:-mb-48 lg:-mb-60 -ml-20 md:-ml-40"
           />

@@ -11,7 +11,7 @@ export const Header = () => {
     <header className="flex justify-between items-center py-4 px-6 bg-mainBlue text-white h-28">
       {/* Logo */}
       <div className="flex flex-col items-center">
-        <img src="././public/logo-inovameet.png" alt="Logo" width={100} height={85} />
+        <img src="/logo-inovameet.png" alt="Logo" width={100} height={85} />
         <h1 className="text-lg font-bold -mt-4">
           Inova<span className="text-green-500">Meet</span>
         </h1>
