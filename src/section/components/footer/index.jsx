@@ -13,8 +13,8 @@ export const Footer = () => {
   const socialMediaPlatforms = ["Facebook", "Instagram", "Twitter", "LinkedIn"];
 
   return (
-    <footer className="h-72 items-center bg-primaryBlue text-white">
-      <section className="flex justify-center gap-20 -ml-[85px] mb-7">
+    <footer className="min-h-72 py-16 items-center bg-primaryBlue text-white">
+      <section className="flex justify-center flex-wrap gap-20  mb-7 ml-0 md:-ml-[85px]">
         <div className="flex flex-col gap-4 justify-center">
           <h1 className="text-2xl font-bold">Sua conta</h1>
           <Label className="text-sm text-zinc-200 font-normal">Cadastre-se</Label>
@@ -22,7 +22,7 @@ export const Footer = () => {
           <Label className="text-sm text-zinc-200 font-normal">Conecte-se com comunidades</Label>
           <Label className="text-sm text-zinc-200 font-normal">Comece uma comunidade</Label>
         </div>
-        <div className="h-48 w-[1px] bg-zinc-300"></div>
+        <div className="h-48 w-[1px] ml-0 bg-zinc-300"></div>
         <div className="flex flex-col gap-4 justify-center">
           <h1 className="text-2xl font-bold">Siga-nos</h1>
 

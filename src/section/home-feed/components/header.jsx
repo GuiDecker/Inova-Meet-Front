@@ -1,14 +1,14 @@
 import { ProfileIcon } from "@/assets/icons/profile";
 import { SearchIcon } from "@/assets/icons/search";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-export const Header = () => {
-  const navigate = useNavigate();
+export const FeedHeader = () => {
   return (
-    <header className="flex justify-between items-center py-4 px-6 bg-mainBlue text-white h-28">
+    <header className="flex justify-between items-center py-6 px-6 bg-mainBlue text-white h-28">
       {/* Logo */}
       <div className="flex flex-col items-center">
         <img src="././public/logo-inovameet.png" alt="Logo" width={100} height={85} />
@@ -33,22 +33,25 @@ export const Header = () => {
           <SearchIcon />
         </Button>
       </div>
+      <Button className="px-4 py-2 bg-primaryGreen hover:bg-green-400 text-black rounded-md">
+        Iniciar uma comunidade
+      </Button>
+
       {/* Action Buttons */}
       <div className="flex items-center space-x-4 gap-4">
-        <Button
-          onClick={() => navigate("/signup")}
-          className="px-4 py-2 bg-primaryGreen hover:bg-green-400 text-black rounded-md"
-        >
-          Iniciar uma comunidade
-        </Button>
-        <Button
-          onClick={() => navigate("/signup")}
-          className="px-4 py-2 bg-primaryGreen hover:bg-green-400 text-black rounded-md"
-        >
-          Cadastre-se
-        </Button>
-        <div onClick={() => navigate("/user-profile")} className="flex items-center cursor-pointer">
+        <div className="flex flex-col gap-3 items-center justify-center cursor-pointer ">
           <ProfileIcon />
+          <Label>Conexões</Label>
+        </div>
+        <div className="flex flex-col gap-3 items-center justify-center cursor-pointer ">
+          <ProfileIcon />
+          <Label>Notificações</Label>
+        </div>
+        <div className="flex items-center cursor-pointer ">
+          <Avatar className="w-[70px] h-[70px] -mt-3 border-8 border-mainBlue">
+            <AvatarImage src="https://github.com/shadcn.png" alt="user profile" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </header>

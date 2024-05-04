@@ -1,46 +1,43 @@
+import { ArrowBackIcon } from "@/assets/icons/arrow-back";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import React from "react";
+import { CreateCommunityHeader } from "./header";
 
 export const CreateCommunityDescription = () => {
   return (
     <div>
-      <div className="flex pl-[10%] items-center  bg-mainBlue h-[170px]">
-        <h1 className="text-2xl text-white font-bold -mt-4">
-          Crie uma comunidade
-        </h1>
-      </div>
+      <CreateCommunityHeader />
 
       <div className="flex justify-center items-center bg-primaryGray h-[82.4vh]">
-        <section className="flex justify-center p-20 gap-x-24 bg-white w-[95%] h-[95%] rounded-2xl">
+        <section className="flex flex-col lg:flex-row justify-center p-5 lg:p-20 gap-5 lg:gap-x-24 bg-white w-full lg:w-[95%] h-[95%] rounded-2xl">
+          {/* Back Button */}
           <div className="flex items-center gap-3 absolute left-[5%] top-[23%] ">
-          {/* // trocar esse icone veio */}
-            <ArrowLeftIcon className="h-7 w-7 rounded-full bg-red-600" />
+            <ArrowBackIcon />
             <Label>Voltar</Label>
           </div>
-          <div className="flex flex-col items-center  gap-7">
-           <h2 className="text-2xl mr-auto text-black font-bold">Descreva sua comunidade</h2>
-           <Label className="text-base">Escolha uma descrição que conte aos usuários quais serão os assuntos abordados na comunidade</Label>
-
-           <textarea
+          {/* Main Content */}
+          <div className="flex flex-col items-center gap-5 w-full lg:w-3/5">
+            <h2 className="text-2xl text-black font-bold">Descreva sua comunidade</h2>
+            <Label className="text-base">
+              Escolha uma descrição que conte aos usuários quais serão os assuntos abordados na comunidade
+            </Label>
+            <Textarea
               type="text"
-              className="resize-none w-full max-w-[100%] h-32 mt-2 border border-gray-300 bg-secondaryGray rounded p-2"
+              className="resize-none w-full max-w-full md:max-w-[80%] h-32 mt-2 border border-gray-300 bg-secondaryGray rounded p-2"
               placeholder="Comunidade Motion: o design no futuro"
             />
-
-           <Button className="w-[30%] bg-blue-800 hover:bg-blue-700">
-            Próximo
-           </Button>
+            <Button className="w-full md:w-[50%] lg:w-[30%] bg-blue-800 hover:bg-blue-700">Próximo</Button>
           </div>
-          <div className="flex flex-col p-5 gap-3 max-h-[370px] rounded w-full max-w-[250px] bg-primaryGray">
-          <h2 className="text-2xl text-black font-bold">Dicas</h2>
-          <Label className="text-base">Considere essas questões a serem respondidas :</Label>
-          <Label className="text-base">Qual o objetivo desse grupo?</Label>
-          <Label className="text-base">Qual serão os assuntos abordados</Label>
-          <Label className="text-base">Quais serão os eventos que acontecerão?</Label>
+          {/* Side Panel */}
+          <div className="flex flex-col mx-auto gap-3 rounded w-full md:w-[80%] lg:w-[40%] max-h-[370px] bg-primaryGray p-5">
+            <h2 className="text-2xl text-black font-bold">Dicas</h2>
+            <Label className="text-base">Considere essas questões a serem respondidas:</Label>
+            <Label className="text-base">Qual o objetivo desse grupo?</Label>
+            <Label className="text-base">Quais serão os assuntos abordados?</Label>
+            <Label className="text-base">Quais serão os eventos que acontecerão?</Label>
           </div>
         </section>
       </div>
