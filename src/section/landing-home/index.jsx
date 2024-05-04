@@ -68,7 +68,7 @@ export const LandingHome = () => {
               >
                 <Label className="text-base">{interest.label}</Label>
                 {interest.icon}
-                <img src={`./src/assets/${interest.img_name}.png`} alt={interest.label} />
+                <img src={`././public/${interest.image_name}.png`} alt={interest.label} />
               </div>
             ))}
           </div>
